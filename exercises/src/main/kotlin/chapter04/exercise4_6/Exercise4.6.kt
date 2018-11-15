@@ -6,9 +6,11 @@ package chapter04.exercise4_6
 
 // You may also model this as just a single class `TreeNode` and decide if it's a branch or leaf via its no. of children
 sealed class TreeNode<T>(var value: T, val children: List<TreeNode<T>>)
+
 class Branch<T>(value: T, children: List<TreeNode<T>>) : TreeNode<T>(value, children) {
   override fun toString(): String = "{$value, ${children.map { it.toString() }}}"
 }
+
 class Leaf<T>(value: T) : TreeNode<T>(value, emptyList<TreeNode<T>>()) {  // `emptyList` does not allow adding elements
   override fun toString(): String = "{$value}"
 }

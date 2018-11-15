@@ -6,11 +6,7 @@ import kotlin.math.min
 /**
  * @author Peter Sommerhoff <peter@petersommerhoff.com>
  */
-class Student(
-    val name: String,
-    val age: Int,
-    val matriculationNo: Int
-) {
+class Student(val name: String, val age: Int, val matriculationNo: Int) {
 
   val grades = mutableMapOf<Course, Grade>()
   val currentEnrollments = mutableListOf<Course>()

@@ -4,8 +4,6 @@ package chapter03
  * @author Peter Sommerhoff <peter@petersommerhoff.com>
  */
 
-// TODO: explain/reason why
-
 val collection = listOf(0, 1, 3, 5, 7, 8, 9)
 
 // 1) First five elements plus everything *but* the first five elements is again the whole list.

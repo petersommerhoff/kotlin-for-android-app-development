@@ -5,8 +5,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import java.net.URL
 
-// TODO: REMOVE ALL REFERENCES TO GlobalScope (highly discouraged to use like this!!!)
-
 /**
  * @author Peter Sommerhoff <peter@petersommerhoff.com>
  */
