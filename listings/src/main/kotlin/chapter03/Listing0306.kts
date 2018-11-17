@@ -1,0 +1,1 @@
+val sum = { x: Int, y: Int -> x + y }  // Infers the variable type

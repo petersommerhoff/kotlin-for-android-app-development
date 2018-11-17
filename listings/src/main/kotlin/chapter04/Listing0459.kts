@@ -1,0 +1,1 @@
+val numbers: List<Number> = listOf<Int>(1, 2, 3)  // Works

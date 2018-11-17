@@ -1,0 +1,1 @@
+infix fun <A, B> A.to(that: B) = Pair(this, that)  // Declared in standard library

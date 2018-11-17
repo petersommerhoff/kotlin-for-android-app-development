@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../build/classes/kotlin/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.71/5470d1f752cd342edb77e1062bac07e838d2cea4/kotlin-stdlib-jdk8-1.2.71.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/0.25.0/46a48655f64537739f59c148bef5059f09d4179b/kotlinx-coroutines-android-0.25.0.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-jdk8/0.25.0/8cb32ddf50480b58c3a1d4493c5731dcc3f9601/kotlinx-coroutines-jdk8-0.25.0.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.25.0/5664ba2d20c6dcc88c912cc9666baa7f03203bcd/kotlinx-coroutines-core-0.25.0.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/23.5-jre/e9ce4989adf6092a3dab6152860e93d989e8cf88/guava-23.5-jre.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/d5439926359caa899f41e1915b19d6d23e49750b/kotlin-script-runtime-1.2.71.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/0.25.0/99f08d4693e6d5f2134dabcc440f6f0867018513/kotlinx-coroutines-core-common-0.25.0.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.0.0/518929596ee3249127502a8573b2e008e2d51ed3/checker-qual-2.0.0.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.0.18/5f65affce1684999e2f4024983835efc3504012e/error_prone_annotations-2.0.18.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.11.3/8f4a66dcd4f0413f828b4df51e736918e05dbd1e/atomicfu-common-0.11.3.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar;C:/Users/peter/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="listings" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.2" />
+          <option name="apiVersion" value="1.2" />
+          <option name="coroutinesState" value="warn" />
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+</module>

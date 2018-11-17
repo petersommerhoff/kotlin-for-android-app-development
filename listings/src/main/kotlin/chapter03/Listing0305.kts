@@ -1,0 +1,1 @@
+val sum: (Int, Int) -> Int = { x, y -> x + y }  // Infers the lambda parameter types

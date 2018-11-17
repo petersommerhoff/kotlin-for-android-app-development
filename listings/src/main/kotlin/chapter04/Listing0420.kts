@@ -1,0 +1,1 @@
+class Task private constructor(title: String, priority: Int) {  }

@@ -1,0 +1,1 @@
+open class ForwardingMutableSet<E>(set: MutableSet<E>) : MutableSet<E> by set

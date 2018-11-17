@@ -1,0 +1,1 @@
+//val numbers: MutableList<Number> = mutableListOf<Int>(1, 2, 3)  // Compile-time error

@@ -1,0 +1,1 @@
+val toUpper: (String) -> String = { it.toUpperCase() }  // Uses the implicit ‘it’

@@ -1,0 +1,1 @@
+inline fun twice(crossinline f: (Int) -> Int): (Int) -> Int = { x -> f(f(x)) }
