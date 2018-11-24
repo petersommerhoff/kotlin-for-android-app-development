@@ -9,6 +9,10 @@ import chapter09.exercise9_1.Measure.*
 /*
  * This is a rather minimal DSL, without any additional nesting. Instead, the `add` function ends up reading like part
  * of a recipe (see [Main.kts]).
+ *
+ * Note that, with this DSL structure, we don't need a @DslMarker annotation. We could disallow nesting another recipe
+ * into a different one by overwriting the function but it might actually be a good way to split a complex recipe up
+ * into sub-recipes -- this is one of the issues you'd discuss with your DSL users in reality.
  */
 
 fun recipe(name: String, init: RecipeBuilder.() -> Unit) = RecipeBuilder(name).apply(init).build()
