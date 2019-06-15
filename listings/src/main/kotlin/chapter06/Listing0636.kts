@@ -1,4 +1,3 @@
-import com.google.common.primitives.UnsignedInts.toLong
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -8,7 +7,7 @@ runBlocking {
   val parent = launch {
     repeat(10) { i ->
       launch {  // Implicitly uses coroutineContext, thus parent context
-        delay(toLong(300 * (i + 1)))
+        delay(300L * (i + 1))
         println("Coroutine ${i + 1} finished")  // Only 1, 2, and 3 get to print
       }
     }

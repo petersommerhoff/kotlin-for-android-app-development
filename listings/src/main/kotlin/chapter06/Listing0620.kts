@@ -12,5 +12,5 @@ runBlocking {
   }
 
   delay(1000)
-  job.cancelAndJoin()  // Cancel is ignored, will wait for another two seconds
+  job.cancelAndJoin()  // Cancel is ignored, so this will wait for another two seconds
 }
