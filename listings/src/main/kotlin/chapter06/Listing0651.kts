@@ -1,7 +1,7 @@
-import kotlinx.coroutines.experimental.channels.Channel
-import kotlinx.coroutines.experimental.channels.actor
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.channels.actor
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 
 runBlocking {
   val actor = actor<String>(capacity = Channel.CONFLATED) {  // Conflated channel

@@ -1,4 +1,4 @@
-import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.delay
 
 suspend fun otherSuspend() {}
 // ----------

@@ -1,6 +1,7 @@
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.withContext
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class User
 class Location
@@ -16,10 +17,10 @@ suspend fun updateWeather(userId: Int) {
   val location = fetchLocation(user)
   val weatherData = fetchWeather(location)
 
-  withContext(UI) {
+  withContext(Dispatchers.Main) {
     updateUi(weatherData)
   }
 }
 
 // Call-site
-launch { updateWeather() }
+GlobalScope.launch { updateWeather(42) }

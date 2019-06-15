@@ -1,6 +1,7 @@
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.newSingleThreadContext
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.newSingleThreadContext
 
-launch(newSingleThreadContext("My New Thread")) {  // Runs coroutine in new thread
+GlobalScope.launch(newSingleThreadContext("My New Thread")) {  // Runs coroutine in new thread
   println("Running on ${Thread.currentThread().name}")
 }

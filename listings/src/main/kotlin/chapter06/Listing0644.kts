@@ -1,7 +1,7 @@
-import kotlinx.coroutines.experimental.CoroutineStart
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.CoroutineStart
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 runBlocking {
   val job = launch(start = CoroutineStart.LAZY) {  // Runs only when triggered

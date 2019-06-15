@@ -1,15 +1,18 @@
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.future.await
-import kotlinx.coroutines.experimental.future.future
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.future.await
+import kotlinx.coroutines.future.future
+import kotlinx.coroutines.runBlocking
 
-fun fetchValueAsync() = future {
-  delay(500)
-  7
+suspend fun fetchValueAsync() = coroutineScope {
+    future {
+        delay(500)
+        7
+    }
 }
 
 runBlocking {
-  fetchValueAsync().thenApply { it * 6 }
-      .thenAccept { println("Retrieved value: $it") }
-      .await()
+    fetchValueAsync().thenApply { it * 6 }
+        .thenAccept { println("Retrieved value: $it") }
+        .await()
 }

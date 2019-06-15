@@ -1,8 +1,10 @@
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.future.future
-import kotlinx.coroutines.experimental.runBlocking
-import kotlinx.coroutines.experimental.suspendCancellableCoroutine
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.future.future
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.suspendCancellableCoroutine
 import java.util.concurrent.CompletableFuture
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
 
 suspend fun <T> CompletableFuture<T>.myAwait(): T {
   return suspendCancellableCoroutine { continuation ->

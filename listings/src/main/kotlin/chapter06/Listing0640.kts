@@ -1,11 +1,12 @@
-import kotlinx.coroutines.experimental.CoroutineExceptionHandler
-import kotlinx.coroutines.experimental.CoroutineName
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.CoroutineName
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 // CoroutineName
 val name = CoroutineName("Koroutine")
 
-launch(name) { }
+GlobalScope.launch(name) { }
 
 // CoroutineExceptionHandler
 val exceptionHandler = CoroutineExceptionHandler { context, exception ->
@@ -13,4 +14,4 @@ val exceptionHandler = CoroutineExceptionHandler { context, exception ->
   exception.printStackTrace()
 }
 
-launch(exceptionHandler) { }
+GlobalScope.launch(exceptionHandler) { }

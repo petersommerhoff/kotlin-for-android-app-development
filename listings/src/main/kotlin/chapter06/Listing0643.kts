@@ -1,9 +1,6 @@
 
-import kotlinx.coroutines.experimental.CoroutineExceptionHandler
-import kotlinx.coroutines.experimental.CoroutineName
-import kotlinx.coroutines.experimental.Job
-import kotlinx.coroutines.experimental.launch
-import kotlin.coroutines.experimental.ContinuationInterceptor
+import kotlinx.coroutines.*
+import kotlin.coroutines.ContinuationInterceptor
 
 val name = CoroutineName("Koroutine")
 val exceptionHandler = CoroutineExceptionHandler { context, exception ->
@@ -11,7 +8,7 @@ val exceptionHandler = CoroutineExceptionHandler { context, exception ->
   exception.printStackTrace()
 }
 // ------------
-launch(name + exceptionHandler) {
+GlobalScope.launch(name + exceptionHandler) {
   println("Context:           ${coroutineContext}")
   println("Job:               ${coroutineContext[Job]}")
   println("Dispatcher:        ${coroutineContext[ContinuationInterceptor]}")

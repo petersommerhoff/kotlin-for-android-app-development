@@ -1,3 +1,3 @@
-import kotlinx.coroutines.experimental.Job
+import kotlinx.coroutines.Job
 
 interface JobHolder { val job: Job }

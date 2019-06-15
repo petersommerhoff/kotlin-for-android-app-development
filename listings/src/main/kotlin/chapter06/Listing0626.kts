@@ -1,11 +1,12 @@
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class Weather
 fun updateUi(w: Weather) {}
 val weatherData = Weather()
 // ---------------
 
-launch(UI) {  // The UI context is provided by the coroutines-android dependency
+GlobalScope.launch(Dispatchers.Main) {  // The UI context is provided by the coroutines-android dependency
   updateUi(weatherData)
 }

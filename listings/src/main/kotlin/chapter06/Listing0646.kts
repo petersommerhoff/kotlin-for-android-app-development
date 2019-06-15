@@ -1,6 +1,4 @@
-import kotlin.coroutines.experimental.buildSequence
-
-val fibonacci = buildSequence {
+val fibonacci = sequence {
   yield(1)
   var a = 0
   var b = 1

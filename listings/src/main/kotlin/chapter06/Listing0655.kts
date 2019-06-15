@@ -1,11 +1,11 @@
-import kotlinx.coroutines.experimental.channels.actor
-import kotlinx.coroutines.experimental.runBlocking
+import chapter06.Deposit
+import chapter06.Transaction
+import chapter06.Withdrawal
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.channels.actor
+import kotlinx.coroutines.runBlocking
 
-sealed class Transaction
-data class Deposit(val amount: Int) : Transaction()
-data class Withdrawal(val amount: Int) : Transaction()
-
-fun newAccount(startBalance: Int) = actor<Transaction>(capacity = 10) {
+fun newAccount(startBalance: Int) = GlobalScope.actor<Transaction>(capacity = 10) {
   var balance = startBalance
   for (tx in channel) {
     when (tx) {
@@ -15,7 +15,7 @@ fun newAccount(startBalance: Int) = actor<Transaction>(capacity = 10) {
   }
 }
 
-fun main(args: Array<String>) = runBlocking<Unit> {
+runBlocking<Unit> {
   val bankAccount = newAccount(1000)
   bankAccount.send(Deposit(500))
   bankAccount.send(Withdrawal(1700))

@@ -1,6 +1,6 @@
-import kotlinx.coroutines.experimental.Deferred
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.Deferred
+import kotlinx.coroutines.async
+import kotlinx.coroutines.runBlocking
 
 runBlocking {
   val deferred: Deferred<Int> = async { throw Exception("Failed...") }

@@ -1,4 +1,5 @@
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class User
 class Location
@@ -9,7 +10,7 @@ suspend fun fetchWeather(location: Location): Weather = Weather()
 fun updateUi(weather: Weather) {}
 val userId = 1
 
-launch {
+GlobalScope.launch {
 // --------------
   val user = fetchUser(userId)  // Asynchronous call in sequential style
   val location = fetchLocation(user)

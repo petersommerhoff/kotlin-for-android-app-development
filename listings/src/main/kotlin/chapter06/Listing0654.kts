@@ -1,7 +1,7 @@
-import kotlinx.coroutines.experimental.*
-import kotlinx.coroutines.experimental.channels.*
-import kotlinx.coroutines.experimental.channels.produce
-import kotlinx.coroutines.experimental.channels.take
+import kotlinx.coroutines.channels.consumeEach
+import kotlinx.coroutines.channels.produce
+import kotlinx.coroutines.channels.take
+import kotlinx.coroutines.runBlocking
 
 runBlocking {
   val producer = produce {

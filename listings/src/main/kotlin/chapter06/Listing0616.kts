@@ -1,8 +1,9 @@
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 // Launches non-blocking coroutine
-launch {
+GlobalScope.launch {
   println("Coroutine started")   // 2nd print
   delay(1000)                    // Calls suspending function from within coroutine
   println("Coroutine finished")  // 3rd print

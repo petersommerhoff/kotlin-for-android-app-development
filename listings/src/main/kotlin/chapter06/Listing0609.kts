@@ -1,7 +1,7 @@
 suspend fun updateWeather() {}
 // -----------
 
-fun main(args: Array<String>) {
+fun wrapper() {
   // Error: Suspend function must be called from coroutine or other suspend function
 //  updateWeather()
 }

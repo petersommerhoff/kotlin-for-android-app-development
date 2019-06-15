@@ -1,5 +1,4 @@
-import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.*
 
 runBlocking {
   val jobs = mutableListOf<Job>()
@@ -17,7 +16,7 @@ runBlocking {
     println("New Thread: In thread ${Thread.currentThread().name} after delay")
   }
 
-  jobs += launch(Unconfined) {
+  jobs += launch(Dispatchers.Unconfined) {
     println("Unconfined: In thread ${Thread.currentThread().name} before delay")
     delay(500)
     println("Unconfined: In thread ${Thread.currentThread().name} after delay")

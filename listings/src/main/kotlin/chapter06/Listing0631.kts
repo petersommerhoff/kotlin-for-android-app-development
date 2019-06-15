@@ -1,7 +1,7 @@
-import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
-launch {
+GlobalScope.launch {
   launch(coroutineContext) {
     println("Running on ${Thread.currentThread().name}")
   }
