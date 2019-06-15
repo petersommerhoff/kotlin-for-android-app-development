@@ -6,7 +6,7 @@ import kotlinx.coroutines.runBlocking
 runBlocking {
   val job = launch {
     repeat(10) {
-      Thread.sleep(300)              // Non-cooperative
+      Thread.sleep(300)        // Non-cooperative
       println("${it + 1} of 10...")  // All ten iterations are executed
     }
   }

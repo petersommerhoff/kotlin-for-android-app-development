@@ -10,7 +10,7 @@ suspend fun fetchWeather(location: Location): Weather = Weather()
 fun updateUi(weather: Weather) {}
 val userId = 1
 
-GlobalScope.launch {
+GlobalScope.launch {  // Avoid GlobalScope in production code
 // --------------
   val user = fetchUser(userId)  // Asynchronous call in sequential style
   val location = fetchLocation(user)

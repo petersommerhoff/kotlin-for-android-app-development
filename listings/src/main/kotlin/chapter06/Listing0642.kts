@@ -9,7 +9,7 @@ val contextJob = NonCancellable
 // -----------------
 
 // CoroutineName + CoroutineExceptionHandler
-GlobalScope.launch(name + exceptionHandler) { }
+CoroutineScope(name + exceptionHandler).launch { }
 
 // Job + CoroutineDispatcher
-GlobalScope.launch(contextJob + Dispatchers.Main) { }
+CoroutineScope(contextJob + Dispatchers.Main).launch { }

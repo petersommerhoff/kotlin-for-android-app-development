@@ -1,6 +1,6 @@
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 
 class User
@@ -17,10 +17,12 @@ suspend fun updateWeather(userId: Int) {
   val location = fetchLocation(user)
   val weatherData = fetchWeather(location)
 
-  withContext(Dispatchers.Main) {
+  withContext(Dispatchers.Main) {  // Refers to UI context on Android
     updateUi(weatherData)
   }
 }
 
 // Call-site
-GlobalScope.launch { updateWeather(42) }
+runBlocking {
+  launch { updateWeather(42) }
+}

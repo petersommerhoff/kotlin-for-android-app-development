@@ -1,4 +1,3 @@
-
 import kotlinx.coroutines.*
 import kotlin.coroutines.ContinuationInterceptor
 
@@ -8,7 +7,7 @@ val exceptionHandler = CoroutineExceptionHandler { context, exception ->
   exception.printStackTrace()
 }
 // ------------
-GlobalScope.launch(name + exceptionHandler) {
+CoroutineScope(name + exceptionHandler).launch {
   println("Context:           ${coroutineContext}")
   println("Job:               ${coroutineContext[Job]}")
   println("Dispatcher:        ${coroutineContext[ContinuationInterceptor]}")

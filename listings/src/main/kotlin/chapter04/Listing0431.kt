@@ -4,7 +4,7 @@ class MyComposite : MyComponent() { fun composite() = 1 }
 class MyLeaf : MyComponent() { fun leaf() = 2 }
 // ----------------
 
-fun main(args: Array<String>) {
+fun main() {
   val comp: MyComponent? = MyLeaf()  // Type is nullable ‘MyComponent?’
 
   if (comp != null) { comp.component() }                 // Smart-cast to MyComponent

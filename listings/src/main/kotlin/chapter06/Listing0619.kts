@@ -12,8 +12,8 @@ runBlocking {
   }
 
   delay(1000)
-  println("main(): No more time")
+  println("runBlocking: No more time")
   job.cancel()  // Can control cancellation on per-coroutine level
   job.join()    // Then wait for it to cancel
-  println("main(): Now ready to quit")
+  println("runBlocking: Now ready to quit")
 }

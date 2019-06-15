@@ -3,7 +3,7 @@ import kotlinx.coroutines.runBlocking
 annotation class Test
 // ------------
 
-fun main(args: Array<String>) = runBlocking<Unit> {  // Allows suspending calls in main
+fun main() = runBlocking<Unit> {  // Allows suspending calls in main
   updateWeather(42)
 }
 

@@ -2,7 +2,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-// Launches non-blocking coroutine
+// Launches non-blocking coroutine (in global scope, do not use in production)
 GlobalScope.launch {
   println("Coroutine started")   // 2nd print
   delay(1000)                    // Calls suspending function from within coroutine

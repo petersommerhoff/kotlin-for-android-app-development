@@ -16,7 +16,7 @@ fun evaluate(expr: Expr): Double = when(expr) {
 val formula: Expr = Times(Plus(Const(2), Const(4)), Minus(Const(8), Const(1)))
 
 // ------- (need main here)
-fun main(args: Array<String>) {
+fun main() {
   println(evaluate(formula))  // 42.0
 }
 
